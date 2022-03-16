@@ -1,0 +1,157 @@
+body {
+    /* #5A5B5B #CADB2B*/
+    background-color: #ddd;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    font-family: 'Amatic SC', cursive;
+}
+::selection {
+    color: none;
+    background: none;
+  }
+.App{
+    width: 100vw;
+    height:100vh;
+
+}
+#lower{
+    position: absolute;
+    bottom: 0;
+}
+.anime{
+    display: block;
+    width: 100vw;
+    margin: 0%;
+    padding: 0%;
+    bottom: 0%;
+    /* position: relative; */
+    z-index: -1;
+}
+.lowerbutton{
+    
+    position: absolute;
+    bottom: 0;
+    
+}
+button[type="button"]{
+    margin:0.1rem 0.5rem 0.2rem 0.1rem;
+    padding: 0 2vw;
+    background-color: #7c7c7c;
+    border-radius: 20px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2vw;
+    outline-style: none;
+    color: black;
+}
+.container{
+    align-items: center;
+    margin: auto;
+    width:calc(100vw/5);
+    
+
+}
+.devinfo { 
+   text-align: center; 
+   
+/* h1{
+    margin:0;
+}} */}
+
+#dev_photo{
+    display: inline-block;
+    margin-top: 100px;
+    background-color: #CADB2B;
+    align-items: center;
+    background-image: url(images/act.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width:calc(100vw/5);
+    height:calc(100vw/5);
+    box-shadow: 5px 5px 5px black;
+    border-radius: 500px;
+    background-size: cover;
+   
+}
+.mainframe{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    top :0;
+    position: absolute;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    width: 70px;
+    height: 80px;
+    align-content: center;
+
+}
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: -80%;
+    width: 200px;
+    height: auto;
+    background-color: #5A5B5B;
+    border-radius: 2em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    text-align: center;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Amatic SC', cursive;
+    font-size: 150%;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd; border-radius: 2em; cursor: pointer;}
+  .dropdown:hover .dropdown-content {display: block;position: absolute;margin: 100% auto;}
+  
+
+  .centerdivmain{
+    display: block;
+      width: 60vw;
+      height:80vh;
+      margin: 100px auto;
+  }
+  .equaldiv{
+    display: flex;
+    justify-content: center;
+    float: left;
+      width:20vw;
+      height: 100%;
+      align-items: center;
+   letter-spacing: 0.5rem;
+  }
+ 
+
+  @keyframes jump {
+
+    100% {
+        width: 70px;
+        height: 70px;
+        display: block;
+        position: absolute;
+        z-index: 99;
+        margin: 0 0 0 8.9vw;
+        image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+
+        background:  #5A5B5B url(./images/act.png) no-repeat center center;
+        background-size: cover;
+        top:0%
+    }
+
+   
+
+}
