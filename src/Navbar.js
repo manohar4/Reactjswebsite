@@ -14,13 +14,17 @@ function Navbar({view2,devclick}) {
     const[devstyle,setDevstyle]=useState();
   
     var set=()=>{
+        if(view2==='notclicked'){
          setDevstyle({
             backgroundImage: "url(" + act + ")",
             animation: 'jump  0.75s ease-in-out forwards',
          })
         return ( 
             setHide(false)
-         );
+         );}else{
+             
+         }
+         
     } 
     const setagain=()=>{
         setDevstyle();
@@ -36,7 +40,7 @@ function Navbar({view2,devclick}) {
             <div id="dev_photo" disabled={disable} style={devstyle} onClick={() => {setDisable(true);set();devclick()}}>
             <div className="dropdown" style={{ display: Hide ? 'none' : 'block' }}>
                 <div className="dropdown-content">
-                   <NavLink to='/'><a onClick={()=>{setagain();}}>Home</a></NavLink>
+                   <NavLink to='/home'><a >Home</a></NavLink>
                     <NavLink to='/aboutme'><a>About me</a></NavLink>
                     <NavLink to='/works'><a>Works</a></NavLink>
                     <NavLink to='/certificates'><a>certificates</a></NavLink>
